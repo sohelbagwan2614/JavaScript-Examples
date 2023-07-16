@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var title=prompt("Enter title");
+        var uid=prompt("Enter user id type","email | mobile | userid");
+        var uid_type=prompt("Enter user id input type");
+        var buttontext=prompt("Enter Button Text");
+        var login=`
+        <h4>${title}<h4>
+        <dl>
+            <dt>${uid}<dt>
+            <dd><input type=${uid_type}><dd>
+            <dt>password</dt>
+            <dd><input type="password"></dd>
+        </dl>
+        <button>${buttontext}</button>
+            `;
+            document.write(login);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
